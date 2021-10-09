@@ -1,0 +1,201 @@
+html,body{
+    height:100%;
+    width:100%;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+.main-container{
+    padding: 2% 15%;
+    min-height: 800px;
+    background-color:rgb(202, 221, 247) ;
+    position: relative;
+}
+
+.heading-block{
+    padding: 2vmin;
+    text-align: center;
+    color: royalblue;
+    border: 2px solid rgb(255, 255, 255);
+    margin-bottom: 2%;
+}
+.myform input{
+    min-height:35px;
+    max-height:50px;
+    padding: 5px 15px;
+   
+   
+}
+.myform label{
+    font-size: clamp(15px, 20px, 50px);
+    /* font-weight: bold; */
+}
+
+.myform div{
+    padding: 1.2vmin 0;
+    /* border: 1px solid rgb(78, 70, 59); */
+    padding: 5px 5px;
+}
+.myform{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgb(202, 221, 247) ;
+    padding: 2% 0;
+    
+}
+
+.namediv{
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+}
+.namediv input{
+    flex:1 1 100% ;
+}
+.datein{
+    flex: 1 1 50%;
+    display: flex;
+}
+.datein input{
+    flex: 1 1 100% ;
+}
+.datein label{
+    margin-right:9px ;
+}
+.amount{
+    flex: 1 1 50%;
+    display: flex;
+}
+.amount input{
+    flex: 1 1 100% ;
+    
+    
+}
+.amount ::placeholder{
+    float: right;
+}
+input:hover,input:focus{
+    box-shadow: 1px 1px 5px black;
+    outline: none;
+    border: none;
+}
+.button-block{
+    flex:1 1 100% ;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+#but{
+    padding: 2vmin 4vmin ;
+    background-color: rgb(91, 100, 235);
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(15px, 20px, 50px);
+    text-align: center;
+    flex: 1 1 100%;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+}
+#but:hover{
+    background-color: blue;
+    
+}
+label{
+    align-self: center;
+}
+hr{
+    height: 2px;
+    border-top:2px solid rgb(255, 255, 255) ;
+}
+.heading-block{
+    position: sticky;
+    top: 0;
+    background-color:rgb(232, 240, 252) ;
+}
+.display-items{
+    width: 100%;
+    margin-top: 1%;
+}
+.first-row{
+    background-color: cornflowerblue;
+}
+.first-row td{
+    padding: 1.5% 0;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+}
+td:nth-child(1){
+    width: 60%;
+}
+td:nth-child(2){
+    width: 15%;
+}
+td:nth-child(3){
+    width: 15%;
+}
+.rest_row td{
+    padding: 1.5% 0;
+    vertical-align: middle;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.rest_row{
+    background-color: rgb(255, 255, 255);
+
+}
+
+.deleteme{
+    display: inline-block;
+    padding: 1.5px;
+    width: 50%;
+    color: white;
+    background-color: rgb(127, 127, 253);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.deleteme:hover{
+    background-color: rgb(73, 73, 145);
+
+}
+
+@media screen and (max-width:800px){
+    .myform div{
+        flex-direction: column;
+
+    }
+    label{
+        align-self: flex-start;
+    }
+    .main-container{
+        padding: 10px 0;
+    }
+}
+.animation{
+    animation: slideme 1s ease-in-out forwards;
+}
+
+@keyframes slideme{
+    from{
+        transform: translateX(50px);
+    }
+    to{
+        transform: translateX(0);
+    }
+
+}
+#warning{
+    color: red;
+    font-size: 15px;
+    margin: 1.5% 0;
+    padding: 0 1.5% ;
+}
+
+.myform span{
+    color: red;
+}
